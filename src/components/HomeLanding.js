@@ -18,21 +18,13 @@ const HomeLanding = () => {
             </div>
 
             <div className={"homelanding-image"}>
-                <img src={cpu} />
-            </div>
-            {/*
+                <img src={cpu} /> 
 
-            <div className={"homelanding-new"}>
-                <img src={candleNew} />
-                <h1>New From Vibras</h1>
-            </div>
+                <div className={"homelanding-small"}>
+                    Inventory
+                </div>
             
-
-            <div className={"homelanding-shop"}>
-                <img src={candleShop} />
-                <h1>Shop Vibras</h1>
             </div>
-        */}
         </div>
     )
 };
