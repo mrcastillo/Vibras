@@ -7,13 +7,13 @@ const HomeLanding = () => {
     return (
         <div className={"homelanding-container"}>
             <div className={"homelanding-banner"}>
-                Vibras By Emily
+                Exclusive 20% sale happening now! Discount applied at check out.
             </div>
 
             
             <div className={"homelanding-textinfo"}>
-                <h1>Vibras By Emily</h1>
-                <p>Vibes from Vibras</p>
+                <h1>Natural Soy Candles</h1>
+                <p>Handcrafted & Homemade</p>
                 <button>View All Candles</button>
             </div>
 
