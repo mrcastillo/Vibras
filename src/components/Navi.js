@@ -1,21 +1,26 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const Navi = () => {
     return (
         <div className={"navi-container"}>
             <div className={"navi-brand"}>
-                <span>Vibras</span>
+                <Link to={"/"}>
+                        <span>Vibras</span>
+                </Link>
             </div>
             <div className={"navi-social"}>
-                <span>by Emily</span>
-                
+                <Link to={"/"}>
+                    <span>by Emily</span>
+                </Link>
             </div>
 
             <div className={"navi-options"}>
-                <div>Home</div>
-                <div>About</div>
-                <div>Shop</div>
-                <div>Cart</div>
+                <div><Link to={"/"}>Home</Link></div>
+                <div><Link to={"/"}>About</Link></div>
+                <div><Link to={"/shop"}>Shop</Link></div>
+                <div><Link to={"/"}>Cart</Link></div>
             </div>
         </div>
     )

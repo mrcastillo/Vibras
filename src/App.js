@@ -29,9 +29,7 @@ const App = () => {
                     <HomeLandingAbout />
                 </Route>
                 
-                <Route path={"/shop"}>
-                    <Shop />
-                </Route>
+                <Route path={"/shop"} component={Shop}/>
                 
                 <div className={"homelanding-break"}></div>
                 <Footer />

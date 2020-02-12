@@ -211,8 +211,26 @@
           background: white;
           border: 2px solid #e72444;
           color: #e72444; }
+    .app-container .shop-container {
+      display: flex;
+      flex-flow: column;
+      padding-top: 3em; }
+      .app-container .shop-container .shop-categories {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px 0px; }
+      .app-container .shop-container .shop-home-items {
+        display: flex;
+        flex-flow: column; }
+        .app-container .shop-container .shop-home-items .shop-home-items-banner {
+          padding-left: 1em; }
+          .app-container .shop-container .shop-home-items .shop-home-items-banner span {
+            border-bottom: 5px solid #e72444; }
     .app-container .footer-container {
-      padding: 5em 0em 5em 0em;
+      padding: 3em 0em 3em 0em;
       display: flex;
       flex-flow: column;
       justify-content: center;
