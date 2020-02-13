@@ -7,13 +7,13 @@ import candle3 from "../images/candle3.jpg"
 import candle4 from "../images/candle4.jpg"
 
 import ShopHome from "./ShopHome.js";
+import ShopProduct from "./ShopProduct.js";
 
 const Shop = () => {
     return (
         <div className={"shop-container"}>
-
-            <Route path={"/shop"} component={ShopHome} />
-            
+            <Route path={`/shop/:product`} component={ShopProduct} />
+            <Route exact path={"/shop"} component={ShopHome} />
         </div>
     )
 };

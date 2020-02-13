@@ -341,7 +341,6 @@ and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
                     display: flex;
                     flex-flow: column wrap;
                     flex-basis: 45%;
-
                     padding: 1em;
 
                     .shop-home-item-img {
@@ -353,7 +352,12 @@ and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
                            height: 100%;
                            object-fit: cover;
                            overflow: hidden;
+                           transition: transform .2s;
                            border-radius: 3px;
+                        }
+
+                        img:hover {
+                            transform: scale(.95);
                         }
                     }
 
@@ -443,6 +447,48 @@ and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
                         color: $custom-pink;
                         background: white;
                         padding: 15px 15px;
+                    }
+                }
+            }
+        }
+
+        .shop-product-container {
+            display: flex;
+            flex-flow: column;
+
+            .shop-product-main-navi {
+                display: flex;
+                flex-flow: row;
+                
+            }
+
+            .shop-product-main {
+                display: grid;
+                grid-template-columns: repeat(24, 1fr);
+                grid-template-rows: repeat(24, auto);
+
+                .shop-product-main-img {
+                    grid-column: 2/12;
+                    grid-row-start: 4;
+                    width: 100%;
+                    height: 200px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        overflow: hidden;
+                        transition: transform .2s;
+                        border-radius: 3px;
+                    }
+                }
+
+                .shop-product-main-info {
+                    grid-column: 14/24;
+                    grid-row-start: 4;
+
+                    h1 {
+                        margin: 0;
                     }
                 }
             }
