@@ -1,3 +1,5 @@
+$custom-pink: rgb(231, 36, 68);
+
 @media (min-width: 992px) 
 and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
     .app-container {
@@ -457,9 +459,11 @@ and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
             flex-flow: column;
 
             .shop-product-main-navi {
-                display: flex;
-                flex-flow: row;
-                
+                grid-column: 2/24;
+                grid-row-start: 1;
+
+                padding: 20px 0px;
+                font-weight: 600;
             }
 
             .shop-product-main {
@@ -469,7 +473,7 @@ and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
 
                 .shop-product-main-img {
                     grid-column: 2/12;
-                    grid-row-start: 4;
+                    grid-row-start: 2;
                     width: 100%;
                     height: 200px;
 
@@ -483,12 +487,121 @@ and (max-width: 1199px), (min-width: 992px), (min-width: 812px){
                     }
                 }
 
+                .shop-product-main-img-option {
+                    grid-column: 2/12;
+                    grid-row-start: 3;
+
+                    text-align: center;
+                    padding: 15px 0px;
+                }
+
                 .shop-product-main-info {
                     grid-column: 14/24;
-                    grid-row-start: 4;
+                    grid-row-start: 2;
 
                     h1 {
                         margin: 0;
+                    }
+                }
+            }
+            
+            .shop-product-description {
+                display: flex;
+                flex-flow: column;
+
+
+                h3 {
+                    text-align: center;
+                    margin: .5em 0em;
+                }
+
+                p {
+                    margin: 0em 3em;
+                    padding: 1em 3em;
+                    border: 1px dotted black;
+                }
+            }
+
+            .shop-product-reviews {
+                display: flex;
+                flex-flow: column;
+                margin: 0em 0em;
+                padding: 1em 3em;
+                
+                #reviews {
+                    margin: 0;
+                    border-bottom: 1px solid black;
+                }
+
+                .shop-product-reviews-post {
+                    display: flex;
+                    flex-flow: row;
+                    margin: 0em 0em 1em 0em;
+                   
+
+                    .shop-product-reviews-post-user {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+
+                        h3 {
+                            margin: 0;
+                            padding: 15px 0em;
+                        }
+
+                        .shop-product-reviews-post-user-avatar {
+
+                            height: 50px;
+                            width: 50px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                    
+                    .shop-product-reviews-post-info {
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        flex: 1;
+                        padding: 0em 0em 0em 2em;
+                        
+                        p, h3 {
+                            margin: 0;
+                        }
+
+                        h3 {
+                            text-align: center;
+                            padding: 0px 0px 15px 0px;
+                        }
+
+                        p {
+                            
+                        }
+
+                        #subject {
+                            font-weight: 600;
+                        }
+
+                        #post {
+                            
+                        }
+
+                        #date {
+                            align-self: flex-end;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    .shop-products-reviews-post-helpful {
+                        display: flex;
+                        flex-basis: 40px;
+                        justify-content: center;
+                        align-items: center;
+                        height: auto;
                     }
                 }
             }

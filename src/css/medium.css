@@ -247,7 +247,10 @@
               height: 100%;
               object-fit: cover;
               overflow: hidden;
+              transition: transform .2s;
               border-radius: 3px; }
+            .app-container .shop-container .shop-home-items-container .shop-home-item .shop-home-item-img img:hover {
+              transform: scale(0.95); }
           .app-container .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info {
             display: flex;
             flex-flow: row; }
@@ -308,6 +311,98 @@
             color: #e72444;
             background: white;
             padding: 15px 15px; }
+    .app-container .shop-product-container {
+      display: flex;
+      flex-flow: column; }
+      .app-container .shop-product-container .shop-product-main-navi {
+        grid-column: 2/24;
+        grid-row-start: 1;
+        padding: 20px 0px;
+        font-weight: 600; }
+      .app-container .shop-product-container .shop-product-main {
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(24, auto); }
+        .app-container .shop-product-container .shop-product-main .shop-product-main-img {
+          grid-column: 2/12;
+          grid-row-start: 2;
+          width: 100%;
+          height: 200px; }
+          .app-container .shop-product-container .shop-product-main .shop-product-main-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            transition: transform .2s;
+            border-radius: 3px; }
+        .app-container .shop-product-container .shop-product-main .shop-product-main-img-option {
+          grid-column: 2/12;
+          grid-row-start: 3;
+          text-align: center;
+          padding: 15px 0px; }
+        .app-container .shop-product-container .shop-product-main .shop-product-main-info {
+          grid-column: 14/24;
+          grid-row-start: 2; }
+          .app-container .shop-product-container .shop-product-main .shop-product-main-info h1 {
+            margin: 0; }
+      .app-container .shop-product-container .shop-product-description {
+        display: flex;
+        flex-flow: column; }
+        .app-container .shop-product-container .shop-product-description h3 {
+          text-align: center;
+          margin: .5em 0em; }
+        .app-container .shop-product-container .shop-product-description p {
+          margin: 0em 3em;
+          padding: 1em 3em;
+          border: 1px dotted black; }
+      .app-container .shop-product-container .shop-product-reviews {
+        display: flex;
+        flex-flow: column;
+        margin: 0em 0em;
+        padding: 1em 3em; }
+        .app-container .shop-product-container .shop-product-reviews #reviews {
+          margin: 0;
+          border-bottom: 1px solid black; }
+        .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post {
+          display: flex;
+          flex-flow: row;
+          margin: 0em 0em 1em 0em; }
+          .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-user {
+            display: flex;
+            flex-flow: column;
+            align-items: center; }
+            .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-user h3 {
+              margin: 0;
+              padding: 15px 0em; }
+            .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-user .shop-product-reviews-post-user-avatar {
+              height: 50px;
+              width: 50px; }
+              .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-user .shop-product-reviews-post-user-avatar img {
+                width: 100%;
+                height: 100%;
+                border-radius: 3px; }
+          .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-info {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            flex: 1;
+            padding: 0em 0em 0em 2em; }
+            .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-info p, .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-info h3 {
+              margin: 0; }
+            .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-info h3 {
+              text-align: center;
+              padding: 0px 0px 15px 0px; }
+            .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-info #subject {
+              font-weight: 600; }
+            .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-product-reviews-post-info #date {
+              align-self: flex-end;
+              font-size: 12px; }
+          .app-container .shop-product-container .shop-product-reviews .shop-product-reviews-post .shop-products-reviews-post-helpful {
+            display: flex;
+            flex-basis: 40px;
+            justify-content: center;
+            align-items: center;
+            height: auto; }
     .app-container .footer-container {
       padding: 3em 0em 3em 0em;
       display: flex;
