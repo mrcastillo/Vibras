@@ -1,5 +1,5 @@
 //@import "./variables.scss";
-
+@import '../../node_modules/material-icons/iconfont/material-icons.css';
 
 
 body {
@@ -21,6 +21,5 @@ a {
 }
 
 @import "https://fonts.googleapis.com/css?family=Lobster&display=swap";
-$custom-pink: rgb(231, 36, 68);
 @import "./small.scss";
 @import "./medium.scss";
