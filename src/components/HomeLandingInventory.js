@@ -9,33 +9,58 @@ const HomeLandingInventory = () => {
     return (
         <div className={"homelanding-inventory-container"}>
 
-            <h1 className={"homelanding-inventory-banner"}>Vibras Collections</h1>
+            <h1 className={"homelanding-inventory-banner"}>Shop Vibras Collections</h1>
+            <button className={"homelanding-inventory-button"}>
+                Shop All
+            </button>
 
-            <hr style={{"width":"100%"}}/>
             <div className={"homelanding-inventory-collection-row"}>
-                <div className={"homelanding-inventory-collection-item "}>
-                    <div className={"img"} style={{ "background-image": `url(${candle1})` }}> </div>
-                    <h1>Soy Candle</h1>
+                <div className={"homelanding-inventory-collection-item"}>
+                    <div className={"homelanding-inventory-collection-item-img"}>
+                        
+                    </div>
+                    <p>Homemade Signature Soy Candle</p>
+                    <span id={"reviews"}>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span>(4)</span>
+                    </span>
+                    <span>from $10</span>
                 </div>
-                    
-                <div className={"homelanding-inventory-collection-item "}>
-                    <div className={"img"} style={{ "background-image": `url(${candle2})` }}></div>
-                    <h1>Abelita's Vaporub</h1>
+
+                <div className={"homelanding-inventory-collection-item"}>
+                    <div className={"homelanding-inventory-collection-item-img"}>
+                        
+                    </div>
+                    <p>Homemade Signature Soy Candle</p>
+                </div>
+
+                <div className={"homelanding-inventory-collection-item"}>
+                    <div className={"homelanding-inventory-collection-item-img"}>
+                        
+                    </div>
+                    <p>Homemade Signature Soy Candle</p>
+                </div>
+                
+                <div className={"homelanding-inventory-collection-item"}>
+                    <div className={"homelanding-inventory-collection-item-img"}>
+                        
+                    </div>
+                    <p>Homemade Signature Soy Candle</p>
+                </div>
+                
+                <div className={"homelanding-inventory-collection-item"}>
+                    <div className={"homelanding-inventory-collection-item-img"}>
+                        
+                    </div>
+                    <p>Homemade Signature Soy Candle</p>
                 </div>
             </div>
 
-            <hr style={{ "width": "50%" }} />
-            <div className={"homelanding-inventory-collection-row"}>
-                <div className={"homelanding-inventory-collection-item "}>
-                    <div className={"img"} style={{ "background-image": `url(${candle3})` }}> </div>
-                    <h1>Decorated Candle</h1>
-                </div>
-                    
-                <div className={"homelanding-inventory-collection-item "}>
-                    <div className={"img"} style={{ "background-image": `url(${candle4})` }}></div>
-                    <h1>Vapo Candle</h1>
-                </div>
-            </div>
+            {/* <hr style={{"width":"100%"}}/> */}
 
         </div>
     )

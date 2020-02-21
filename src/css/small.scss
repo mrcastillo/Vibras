@@ -162,7 +162,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 font-size: 20px;
                 font-weight: 600;
                 color: white;
-                padding-top: 25%;
+                padding-top: 20%;
 
                 display: flex;
                 flex-flow: column;
@@ -171,6 +171,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                     display: block;
                     text-align: center;
                     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    background: rgba(0, 0, 0, .5);
                 }
 
                 .homelanding-text-buttons {
@@ -178,16 +179,15 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                     width: 100%;
                     flex: 1;
                     text-align: center;
-                    
 
                     button {
                         width: 80%;
                         font-size: 16px;
-                        padding: 15px 0px;
+                        padding: 10px 0px;
                         background: #FFFFFF;
                         opacity: .8;
                         border: 2px solid $custom-pink;
-                        border-radius: 5px;
+                        border-radius: 50px;
                         color: $custom-pink;
                         margin-bottom: 10px;
                         font-weight: 600;
@@ -204,64 +204,66 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         background: salmon;
     }
 
-    .homelanding-carol-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 50px;
-        padding: 1em;
-        text-align: center;
-        
-        .homelanding-carol-img {
-            grid-column: 1/1;
-            grid-row-start: 2;
-            //margin: 0em 5em 0em 5em;
-
-            img {
-                width: 50%;
-                height: auto;
-            }
-        }
-
-        .homelanding-carol-navi {
-            grid-column: 1/1;
-            grid-row-start: 3;
-        }
-
-        h2 {
-            grid-column: 1/1;
-            grid-row-start: 1;
-        }
-    }
-
     .homelanding-inventory-container {
         display: flex;
         flex-flow: column;
-        padding: 1em;
+        padding: 0em 0em 3em 0px;
 
-        .homelanding-invetory-collection-row {
+        .homelanding-inventory-banner {
+            text-align: center;
+            font-family: 'Lobster', cursive;
+        }
+
+        .homelanding-inventory-button {
+            width: 25%;
+            font-size: 14px;
+            padding: 10px 0px;
+            background: #FFFFFF;
+            opacity: .8;
+            border: 2px solid $custom-pink;
+            border-radius: 50px;
+            color: $custom-pink;
+            margin-bottom: 15px;
+            font-weight: 600;
+            align-self: center;
+        }
+
+        .homelanding-inventory-collection-row {
             display: flex;
             flex-flow: row;
+            overflow-y: scroll;
+            width: 100%;
 
-            .test {
+            .homelanding-inventory-collection-item {
                 display: flex;
                 flex-flow: column;
-                align-items: center;
-                padding: 1em;
-                flex-basis: 50%;
+                padding-left: 10px;
+                
+                .homelanding-inventory-collection-item-img {
+                    width: 100%;
+                    height: 100px;
+                    background-image: url("../images/candle3.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 3px;
 
-                h1 {
-                    margin: 0;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
-            }
 
-            .img {
-                //padding: 1em;
-                //margin: 3em;
-                width: 300px;
-                height: 300px;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                background-size: cover;
+                p {
+                    width: 150px;
+                    text-align: center;
+                    margin: 0;
+                    font-weight: 600;
+                }
+
+                span {
+                    text-align: center;
+                }
             }
         }
     }

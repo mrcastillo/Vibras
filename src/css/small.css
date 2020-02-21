@@ -113,13 +113,14 @@
         font-size: 20px;
         font-weight: 600;
         color: white;
-        padding-top: 25%;
+        padding-top: 20%;
         display: flex;
         flex-flow: column; }
         .homelanding-container .homelanding-image .homelanding-text span {
           display: block;
           text-align: center;
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+          background: rgba(0, 0, 0, 0.5); }
         .homelanding-container .homelanding-image .homelanding-text .homelanding-text-buttons {
           margin-top: 3em;
           width: 100%;
@@ -128,53 +129,60 @@
           .homelanding-container .homelanding-image .homelanding-text .homelanding-text-buttons button {
             width: 80%;
             font-size: 16px;
-            padding: 15px 0px;
+            padding: 10px 0px;
             background: #FFFFFF;
             opacity: .8;
             border: 2px solid #e72444;
-            border-radius: 5px;
+            border-radius: 50px;
             color: #e72444;
             margin-bottom: 10px;
             font-weight: 600; }
   .homelanding-break {
     height: 10px;
     background: salmon; }
-  .homelanding-carol-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px;
-    padding: 1em;
-    text-align: center; }
-    .homelanding-carol-container .homelanding-carol-img {
-      grid-column: 1/1;
-      grid-row-start: 2; }
-      .homelanding-carol-container .homelanding-carol-img img {
-        width: 50%;
-        height: auto; }
-    .homelanding-carol-container .homelanding-carol-navi {
-      grid-column: 1/1;
-      grid-row-start: 3; }
-    .homelanding-carol-container h2 {
-      grid-column: 1/1;
-      grid-row-start: 1; }
   .homelanding-inventory-container {
     display: flex;
     flex-flow: column;
-    padding: 1em; }
-    .homelanding-inventory-container .homelanding-invetory-collection-row {
+    padding: 0em 0em 3em 0px; }
+    .homelanding-inventory-container .homelanding-inventory-banner {
+      text-align: center;
+      font-family: 'Lobster', cursive; }
+    .homelanding-inventory-container .homelanding-inventory-button {
+      width: 25%;
+      font-size: 14px;
+      padding: 10px 0px;
+      background: #FFFFFF;
+      opacity: .8;
+      border: 2px solid #e72444;
+      border-radius: 50px;
+      color: #e72444;
+      margin-bottom: 15px;
+      font-weight: 600;
+      align-self: center; }
+    .homelanding-inventory-container .homelanding-inventory-collection-row {
       display: flex;
-      flex-flow: row; }
-      .homelanding-inventory-container .homelanding-invetory-collection-row .test {
+      flex-flow: row;
+      overflow-y: scroll;
+      width: 100%; }
+      .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item {
         display: flex;
         flex-flow: column;
-        align-items: center;
-        padding: 1em;
-        flex-basis: 50%; }
-        .homelanding-inventory-container .homelanding-invetory-collection-row .test h1 {
-          margin: 0; }
-      .homelanding-inventory-container .homelanding-invetory-collection-row .img {
-        width: 300px;
-        height: 300px;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover; } }
+        padding-left: 10px; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item .homelanding-inventory-collection-item-img {
+          width: 100%;
+          height: 100px;
+          background-image: url("../images/candle3.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 3px; }
+          .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item .homelanding-inventory-collection-item-img img {
+            width: 100%;
+            height: auto; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item p {
+          width: 150px;
+          text-align: center;
+          margin: 0;
+          font-weight: 600; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item span {
+          text-align: center; } }
