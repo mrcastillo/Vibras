@@ -45,12 +45,12 @@ const ShopHome = () => {
 
                 <div className={"shop-home-item"}>
                     <div className={"shop-home-item-img"}>
-                        <img src={candle2} />
+                        <img src={candle1} />
                     </div>
 
                     <div className={"shop-home-item-info"}>
                         <div className={"shop-home-item-info-text"}>
-                            <h2>Vicks Candle</h2>
+                            <h2>Soy Candle</h2>
                             <p>Soy, Blueberries, Apples, Corn</p>
                             <p>$10</p>
                         </div>

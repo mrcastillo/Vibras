@@ -33,30 +33,51 @@ const HomeLandingInventory = () => {
 
                 <div className={"homelanding-inventory-collection-item"}>
                     <div className={"homelanding-inventory-collection-item-img"}>
-                        
+
                     </div>
                     <p>Homemade Signature Soy Candle</p>
+                    <span id={"reviews"}>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span>(4)</span>
+                    </span>
+                    <span>from $10</span>
                 </div>
 
                 <div className={"homelanding-inventory-collection-item"}>
                     <div className={"homelanding-inventory-collection-item-img"}>
-                        
+
                     </div>
                     <p>Homemade Signature Soy Candle</p>
+                    <span id={"reviews"}>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span>(4)</span>
+                    </span>
+                    <span>from $10</span>
                 </div>
-                
+
+
                 <div className={"homelanding-inventory-collection-item"}>
                     <div className={"homelanding-inventory-collection-item-img"}>
-                        
+
                     </div>
                     <p>Homemade Signature Soy Candle</p>
-                </div>
-                
-                <div className={"homelanding-inventory-collection-item"}>
-                    <div className={"homelanding-inventory-collection-item-img"}>
-                        
-                    </div>
-                    <p>Homemade Signature Soy Candle</p>
+                    <span id={"reviews"}>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span className="material-icons">star</span>
+                        <span>(4)</span>
+                    </span>
+                    <span>from $10</span>
                 </div>
             </div>
 
