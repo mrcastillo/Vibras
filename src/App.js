@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navi from "./components/Navi";
 import HomeLanding from "./components/HomeLanding";
-import HomeLandingCarol from "./components/HomeLandingCarol";
 import HomeLandingInventory from "./components/HomeLandingInventory";
-import HomeLandingAbout from "./components/HomeLandingAbout";
+import HomeLandingSubscribe from "./components/HomeLandingSubscribe.js";
+import HomeLandingIG from "./components/HomeLandingIG.js";
 
 import Shop from "./components/Shop";
 
@@ -15,23 +14,19 @@ const App = () => {
     return(
         <div className={"app-container"}>
             <Router>
-                <Navi/>
-
                 <Route exact path={"/"}>
                     <HomeLanding />
-                    <div className={"homelanding-break"}></div>
+
                     <HomeLandingInventory />
                     {/* 
                     <div className={"homelanding-break"}></div>
                     <HomeLandingCarol />
                     */}
-                    <div className={"homelanding-break"}></div>
-                    <HomeLandingAbout />
+                    <HomeLandingSubscribe />
+                    <HomeLandingIG />
                 </Route>
-                
                 <Route path={"/shop"} component={Shop}/>
-                
-                <div className={"homelanding-break"}></div>
+
                 <Footer />
             </Router>
         </div>

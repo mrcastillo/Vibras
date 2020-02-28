@@ -33,6 +33,7 @@ const Navi = () => {
                 </div>
             </div>
 
+            {/* 
             <div className={"navi-brand"}>
                 <Link to={"/"}>
                         <span>Vibras</span>
@@ -43,6 +44,7 @@ const Navi = () => {
                     <span>by Emily</span>
                 </Link>
             </div>
+            */}
 
             <div className={"navi-options"}>
                 <div><Link to={"/"}>Home</Link></div>
@@ -55,12 +57,23 @@ const Navi = () => {
                 <div className={"navi-options-sm-left"} onClick={openMobileNavi}>
                     <span className="material-icons">reorder</span>
                 </div>
-                <div className={"navi-options-sm-right"}>
-                    <span className="material-icons">search</span>
-                    <span className="material-icons">shopping_cart</span>
+
+                <div className={"navi-options-sm-middle"}>
+                    <div className={"navi-brand"}>
+                        <Link to={"/"}>
+                            <span>Vibras</span>
+                        </Link>
+                    </div>
+                    <div className={"navi-social"}>
+                        <Link to={"/"}>
+                            <span>by Emily</span>
+                        </Link>
+                    </div>
                 </div>
                 
-
+                <div className={"navi-options-sm-right"}>
+                    <span className="material-icons">shopping_cart</span>
+                </div>
             </div>
         </div>
     )

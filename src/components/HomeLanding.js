@@ -1,36 +1,33 @@
 import React from "react";
 import candleShop from "../images/candle1.jpg"
 import candleNew from "../images/candle3.jpg"
+import Navi from "../components/Navi";
 
-const HomeLanding = () => {
+const HomeLandingSubscribe = () => {
     return (
         <div className={"homelanding-container"}>
-
-            <div className={"homelanding-banner"}>
-                Exclusive 20% sale happening now! Discount applied at check out.
-            </div>
-
+            
+            {/* 
             <div className={"homelanding-textinfo"}>
                 <h1>Natural Soy Candles</h1>
                 <p>Handcrafted & Homemade</p>
                 <button>View All Candles</button>
             </div>
-
+            */}
+            <div className={"sale"}>
+                Get 10% off all sales!
+            </div>
             <div className={"homelanding-image"}>
+                
+                <Navi />
+
                 <div className={"homelanding-text"}>
-                    <span>
-                        Welcome to Vibras.
-                    </span>
-                    <span>
-                        The Candles That You Will Forever Love.
-                    </span>
                     <span>
                         Handmade all natural candles
                     </span>
                     
                     <div className={"homelanding-text-buttons"}>
-                        <button>Shop Vibras Handmade Candles</button>
-                        <button>Learn more about Vibras.</button>
+                        <button>Shop Vibras</button>
                     </div>
                 </div>
             </div>
@@ -38,4 +35,4 @@ const HomeLanding = () => {
     )
 };
 
-export default HomeLanding;
+export default HomeLandingSubscribe;
