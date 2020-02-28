@@ -340,6 +340,13 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         h2 {
             text-align: center;
             width: 100%;
+            margin: 1em 0em 0em 0em;
+        }
+
+
+        p {
+            text-align: center;
+            margin: 15px 0px;
         }
 
         .homelanding-IG-images {
@@ -347,6 +354,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             flex-flow: row wrap;
             justify-content: center;
             //margin: 5%;
+            padding-bottom: 1em;
                         
             div {
                 flex-basis: 175px;
@@ -361,5 +369,23 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 }
             }
         }
+
+        button {
+            width: 50%;
+            text-align: center;
+            align-self: center;
+            border: 1px solid $custom-pink;
+            color: $custom-pink;
+            padding: 15px 0px;
+            margin: 15px 0;
+            font-size: 18px;
+            background: white;
+        }
+    }
+
+    .footer-container {
+        background: rgba(0, 0, 0, .9);
+        text-align: center;
+        color: white;
     }
 }

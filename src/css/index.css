@@ -253,11 +253,16 @@ a {
     flex-flow: column; }
     .homelanding-IG-container h2 {
       text-align: center;
-      width: 100%; }
+      width: 100%;
+      margin: 1em 0em 0em 0em; }
+    .homelanding-IG-container p {
+      text-align: center;
+      margin: 15px 0px; }
     .homelanding-IG-container .homelanding-IG-images {
       display: flex;
       flex-flow: row wrap;
-      justify-content: center; }
+      justify-content: center;
+      padding-bottom: 1em; }
       .homelanding-IG-container .homelanding-IG-images div {
         flex-basis: 175px;
         height: 125px;
@@ -266,7 +271,21 @@ a {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          overflow: hidden; } }
+          overflow: hidden; }
+    .homelanding-IG-container button {
+      width: 50%;
+      text-align: center;
+      align-self: center;
+      border: 1px solid #e72444;
+      color: #e72444;
+      padding: 15px 0px;
+      margin: 15px 0;
+      font-size: 18px;
+      background: white; }
+  .footer-container {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: white; } }
 
 @media (min-width: 992px) and (max-width: 1199px), (min-width: 992px), (min-width: 812px) {
   .app-container {
