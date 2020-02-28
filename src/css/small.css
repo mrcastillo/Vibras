@@ -1,0 +1,253 @@
+@import url(../../node_modules/material-icons/iconfont/material-icons.css);
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
+  .app-container {
+    display: flex;
+    flex-flow: column;
+    background: white;
+    border-radius: 3px; }
+    .app-container .homelanding-banner {
+      display: flex;
+      flex-flow: row;
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 15px 15px; }
+    .app-container .navi-container {
+      display: flex;
+      flex-flow: column;
+      grid-row-start: 1;
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+      .app-container .navi-container .navi-overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s; }
+        .app-container .navi-container .navi-overlay .navi-overlay-close {
+          text-align: center;
+          padding: 2em 0em 0em 0px;
+          color: white; }
+        .app-container .navi-container .navi-overlay .navi-overlay-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px; }
+          .app-container .navi-container .navi-overlay .navi-overlay-content a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            font-weight: bold; }
+      .app-container .navi-container .navi-options {
+        visibility: hidden;
+        display: none; }
+      .app-container .navi-container .navi-options-sm {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around; }
+        .app-container .navi-container .navi-options-sm .navi-options-sm-left {
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center; }
+          .app-container .navi-container .navi-options-sm .navi-options-sm-left span {
+            font-size: 34px; }
+        .app-container .navi-container .navi-options-sm .navi-options-sm-middle {
+          display: flex;
+          flex-flow: column; }
+          .app-container .navi-container .navi-options-sm .navi-options-sm-middle .navi-brand {
+            font-family: 'Lobster', cursive;
+            font-size: 42px;
+            font-weight: 600;
+            text-align: center; }
+          .app-container .navi-container .navi-options-sm .navi-options-sm-middle .navi-social {
+            font-family: 'Lobster', cursive;
+            text-align: center; }
+        .app-container .navi-container .navi-options-sm .navi-options-sm-right {
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center; }
+          .app-container .navi-container .navi-options-sm .navi-options-sm-right span {
+            font-size: 34px; }
+  .homelanding-container {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; }
+    .homelanding-container .sale {
+      grid-column: 1/3;
+      color: white;
+      text-align: center;
+      padding: 5px 0px;
+      background: black;
+      width: 100%; }
+    .homelanding-container .homelanding-textinfo {
+      display: none;
+      visibility: hidden; }
+    .homelanding-container .homelanding-image {
+      grid-column: 1/3;
+      grid-row-start: 3;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      z-index: 0;
+      background: rgba(0, 0, 0, 0.9);
+      background-image: url("../images/candle3_trans.png");
+      height: 500px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+      .homelanding-container .homelanding-image .homelanding-text {
+        grid-column: 1/3;
+        grid-row-start: 2;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+        z-index: 0;
+        display: flex;
+        flex-flow: column; }
+        .homelanding-container .homelanding-image .homelanding-text span {
+          display: block;
+          text-align: center;
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+          background: rgba(0, 0, 0, 0);
+          padding: 8px 0px;
+          font-size: 34px;
+          font-family: 'Lobster', cursive; }
+        .homelanding-container .homelanding-image .homelanding-text .homelanding-text-buttons {
+          display: flex;
+          flex-flow: column;
+          margin-top: 1em;
+          text-align: center;
+          align-items: center;
+          height: 100%; }
+          .homelanding-container .homelanding-image .homelanding-text .homelanding-text-buttons button {
+            width: auto;
+            font-size: 20px;
+            padding: 10px 30px;
+            background: white;
+            color: black;
+            opacity: 1;
+            border: 2px solid #e72444;
+            color: #e72444;
+            font-weight: 600;
+            text-align: center;
+            align-self: center;
+            font-family: 'Lobster', cursive; }
+  .homelanding-break {
+    height: 10px;
+    background: salmon; }
+  .homelanding-inventory-container {
+    display: flex;
+    flex-flow: column;
+    padding: 0em 0em 3em 0px; }
+    .homelanding-inventory-container .homelanding-inventory-banner {
+      text-align: center;
+      font-family: 'Lobster', cursive; }
+    .homelanding-inventory-container .homelanding-inventory-button {
+      width: 25%;
+      font-size: 14px;
+      padding: 10px 0px;
+      background: #FFFFFF;
+      opacity: .8;
+      border: 2px solid #e72444;
+      border-radius: 50px;
+      color: #e72444;
+      margin-bottom: 15px;
+      font-weight: 600;
+      align-self: center; }
+    .homelanding-inventory-container .homelanding-inventory-collection-row {
+      display: flex;
+      flex-flow: row;
+      overflow-y: scroll;
+      width: 100%; }
+      .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item {
+        display: flex;
+        flex-flow: column;
+        padding-left: 10px; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item .homelanding-inventory-collection-item-img {
+          width: 100%;
+          height: 100px;
+          background-image: url("../images/candle3.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 3px; }
+          .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item .homelanding-inventory-collection-item-img img {
+            width: 100%;
+            height: auto; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item p {
+          width: 150px;
+          text-align: center;
+          margin: 0;
+          font-weight: 600; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item span {
+          text-align: center; }
+  .homelanding-subscribe-container {
+    background: rgba(0, 0, 0, 0.9);
+    background-image: url("../images/candle1_trans.png");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    .homelanding-subscribe-container p {
+      margin: 0px 0px 15px 0px;
+      font-size: 18px;
+      font-family: "Lobster";
+      font-weight: 400;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    .homelanding-subscribe-container h3 {
+      margin: 0px 0px 15px 0px;
+      font-size: 32px;
+      font-family: "Lobster";
+      font-weight: 400;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    .homelanding-subscribe-container input {
+      width: 75%;
+      padding: 15px 10px;
+      text-align: center;
+      border: 1px solid black;
+      margin: 15px 0px; }
+    .homelanding-subscribe-container button {
+      padding: 12px 20px;
+      border: 1px solid #e72444;
+      font-size: 16px;
+      color: #e72444;
+      background: white; }
+  .homelanding-IG-container {
+    display: flex;
+    flex-flow: column; }
+    .homelanding-IG-container h2 {
+      text-align: center;
+      width: 100%; }
+    .homelanding-IG-container .homelanding-IG-images {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .homelanding-IG-container .homelanding-IG-images div {
+        flex-basis: 175px;
+        height: 125px;
+        border: .5px solid white; }
+        .homelanding-IG-container .homelanding-IG-images div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden; } }
