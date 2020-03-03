@@ -1,9 +1,15 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import candleShop from "../images/candle1.jpg"
 import candleNew from "../images/candle3.jpg"
 import Navi from "../components/Navi";
 
 const HomeLandingSubscribe = () => {
+    const history = useHistory();
+
+    const goToShop = () => {
+        history.push("/shop");
+    }
     return (
         <div className={"homelanding-container"}>
             
@@ -19,7 +25,7 @@ const HomeLandingSubscribe = () => {
             </div>
             <div className={"homelanding-image"}>
                 
-                <Navi />
+                <Navi/>
 
                 <div className={"homelanding-text"}>
                     <span>
@@ -27,7 +33,7 @@ const HomeLandingSubscribe = () => {
                     </span>
                     
                     <div className={"homelanding-text-buttons"}>
-                        <button>Shop Vibras</button>
+                        <button onClick={goToShop}>Shop Vibras</button>
                     </div>
                 </div>
             </div>

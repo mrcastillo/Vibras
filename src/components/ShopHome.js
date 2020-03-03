@@ -1,4 +1,6 @@
 import React from "react";
+import Navi from "../components/Navi";
+import HomeLandingIG from "../components/HomeLandingIG";
 
 import candle1 from "../images/candle1.jpg"
 import candle2 from "../images/candle2.jpg"
@@ -8,6 +10,16 @@ import candle4 from "../images/candle4.jpg"
 const ShopHome = () => {
     return (
         <React.Fragment>
+            <Navi color={"black"}/>
+
+            <h1 className={"shop-home-items-banner"}>
+                <span>The Vibras Collection</span>
+            </h1>
+
+            <p className={"shop-home-items-text"}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
             <div className={"shop-categories"}>
                 <span>Newest Releases</span>
                 <span>Soy Candles</span>
@@ -19,12 +31,7 @@ const ShopHome = () => {
 
             </div>
 
-            <h1 className={"shop-home-items-banner"}>
-                <span>Collections</span>
-            </h1>
-
             <div className={"shop-home-items-container"}>
-
                 <div className={"shop-home-item"}>
                     <div className={"shop-home-item-img"}>
                         <img src={candle1} />
@@ -38,14 +45,14 @@ const ShopHome = () => {
                         </div>
 
                         <div className={"shop-home-item-info-view"}>
-                            <button>View</button>
+                            {/* <button>View</button> */}
                         </div>
                     </div>
                 </div>
 
                 <div className={"shop-home-item"}>
                     <div className={"shop-home-item-img"}>
-                        <img src={candle1} />
+                        <img src={candle2} />
                     </div>
 
                     <div className={"shop-home-item-info"}>
@@ -56,7 +63,7 @@ const ShopHome = () => {
                         </div>
 
                         <div className={"shop-home-item-info-view"}>
-                            <button>View</button>
+                            {/* <button>View</button> */}
                         </div>
                     </div>
                 </div>
@@ -73,9 +80,12 @@ const ShopHome = () => {
                             <p>$10</p>
                         </div>
 
+                        {/*
                         <div className={"shop-home-item-info-view"}>
-                            <button>View</button>
+                             <button>View</button> 
+                             
                         </div>
+                        */}
                     </div>
                 </div>
 
@@ -91,19 +101,25 @@ const ShopHome = () => {
                             <p>$10</p>
                         </div>
 
+                        {/*
                         <div className={"shop-home-item-info-view"}>
-                            <button>View</button>
+                             <button>View</button> 
                         </div>
+                        */}
                     </div>
+                </div>
+
+                <div className={"shop-home-shopall"}>
+                    <button>Shop All</button>
                 </div>
             </div>
 
-            <div className={"shop-home-shopall"}>
-                <button>Shop All</button>
-            </div>
-
+            
+            
+            <HomeLandingIG />
+            {/* 
             <div className={"homelanding-break"}></div>
-
+                
             <div className={"shop-home-item-subscribe"}>
                 <h1>Get the latest news</h1>
                 <p>Subscribe now to get the latest from Vibras</p>
@@ -113,6 +129,7 @@ const ShopHome = () => {
                     <input type={"submit"} id={"submit"} value={"Subscribe"} />
                 </form>
             </div>
+            */}
         </React.Fragment>
     )
 };

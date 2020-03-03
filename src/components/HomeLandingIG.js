@@ -12,7 +12,7 @@ const HomeLandingIG = () => {
         <div className={"homelanding-IG-container"}>
             
             <h2>Vibras On Instagram</h2>
-            <p>Loren Ipsum</p>
+            <p>Follow Us On Instagram</p>
             <div className={"homelanding-IG-images"}>
                 <div>
                     <img src={candle1} />

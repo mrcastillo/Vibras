@@ -16,9 +16,9 @@ const closeMobileNavi = (event) => {
     naviOverlayWidth.style.width = "0%";
 };
 
-const Navi = () => {
+const Navi = (props) => {
     return (
-        <div className={"navi-container"}>
+        <div className={"navi-container"} style={{"backgroundColor" : props.color}}>
 
             <div className={"navi-overlay"} onClick={closeMobileNavi}>
                 <div className={"navi-overlay-close"}>
@@ -58,7 +58,7 @@ const Navi = () => {
                     <span className="material-icons">reorder</span>
                 </div>
 
-                <div className={"navi-options-sm-middle"}>
+                <div className={"navi-options-sm-middle"} onClick={openMobileNavi}>
                     <div className={"navi-brand"}>
                         <Link to={"/"}>
                             <span>Vibras</span>
