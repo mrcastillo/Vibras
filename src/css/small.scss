@@ -27,7 +27,8 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             display: flex;
             flex-flow: column;
             color: white;
-            padding: 8px 0px;
+            //padding: 8px 0px;
+            margin: 1em 0em;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             
@@ -136,26 +137,56 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             background: black;
             width: 100%;
         }
-
-        .homelanding-textinfo {
-            display: none;
-            visibility: hidden;
-            
-        }
         
         .homelanding-image {
             display: flex;
             flex-flow: column;
             z-index: 0;
 
-            background: rgba(0, 0, 0, 0.9);
-            background-image: url("../images/candle3_trans.png"); 
-            height: 500px;
+            background: rgba(0, 0, 0, .9);
+            background-image: url("../images/candle11.JPG"); 
+            height: 400px;
             width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: top;
+            
+            .homelanding-text {
+                display: flex;
+                flex-flow: column;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 3em;
+                height: 100%;
+                
+                div {
+                    width: 100%;
+                    padding: 15px 0px;
+                    background: rgba(0,0,0, 0.4);
 
+                    h3 {
+                        font-size: 32px;
+                        font-family: "Lobster", cursive;
+                        text-align: center;
+                        margin: 0;
+                        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 400;
+                        font-family: "Lobster", cursive;
+                        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    }
+                }
+            }
+
+            /*
             .homelanding-text {
                 font-size: 20px;
                 font-weight: 600;
@@ -188,7 +219,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
                     button {
                         width: auto;
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 10px 30px;
                         background: rgba(255, 255, 255, 1);
                         color: black;
@@ -198,13 +229,13 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                         //border-radius: 12px;
                         color: $custom-pink;
                         //color: black;
-                        font-weight: 600;
+                        //font-weight: 600;
                         text-align: center;
                         align-self: center;
-                        font-family: 'Lobster', cursive;
+                        //font-family: 'Lobster', cursive;
                     }
                 }
-            }
+            }*/
         }
     }
 
@@ -217,6 +248,9 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         display: flex;
         flex-flow: column;
         padding: 0em 0em 3em 0px;
+        background: white;
+        //background-image: linear-gradient(to  left, rgba(234, 216, 216, .0), rgba(234, 216, 216, 1));
+    
 
         .homelanding-inventory-banner {
             text-align: center;
@@ -242,6 +276,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             flex-flow: row;
             overflow-y: scroll;
             width: 100%;
+            padding: 25px 0px;
 
             .homelanding-inventory-collection-item {
                 display: flex;
@@ -273,13 +308,26 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 span {
                     text-align: center;
                 }
+                
+                #reviews {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-size: 18px;
+                        color: black;
+                        font-weight: 600;
+                    }
+                }
             }
         }
     }
 
     .homelanding-subscribe-container {
         background: rgba(0, 0, 0, .9);
-        background-image: url("../images/candle1_trans.png"); 
+        background-image: url("../images/candle10.JPG"); 
         height: 500px;
         width: 100%;
         background-repeat: no-repeat;
@@ -328,6 +376,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
     .homelanding-IG-container {
         display: flex;
         flex-flow: column;
+        //background-image: linear-gradient(to left, rgba(234, 216, 216, .0), rgba(234, 216, 216, 1));
 
         h2 {
             text-align: center;
@@ -381,15 +430,18 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
         .shop-home-items-banner {
             text-align: center;
-            margin: 1em 0em .5em 0em;
-        }
+            margin: 1em 0em 0em 0em;
+            
 
-        .shop-home-items-text {
-            text-align: center;
-            font-size: 14px;
-            margin: 0px 15px;
-            padding: 10px 10px;
-            background: lightgrey;
+            span {
+                font-size: 32px;
+                //text-decoration: underline;
+                font-weight: 600;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
         }
 
         .shop-categories {
@@ -401,8 +453,16 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
             span {
                 text-align: center;
-                border-right: .5px solid black;
+                width: 60px;
+                font-weight: 600;
+                padding: 5px 0px;
+                //border-right: .5px solid black;
+                border-bottom: 1px solid black;
             }
+        }
+
+        .shop-filters {
+            margin: 1em 0em;
         }
 
         .shop-home-items-container {
@@ -418,7 +478,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
                 .shop-home-item-img {
                     width: 100%;
-                    height: 300px;
+                    height: 150px;
                     
                     img {
                         width: 100%;
@@ -443,8 +503,9 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                     //padding: 8px 0px;
 
                     .shop-home-item-info-text {
+                        text-align: left;
                         flex: 1;
-                        
+
                         h2 {
                             color: $custom-pink;
                             margin: 0;
@@ -494,5 +555,19 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         background: rgba(0, 0, 0, .9);
         text-align: center;
         color: white;
+
+        .footer-social {
+            display: flex;
+            flex-flow: column;
+            padding: 15px 0px;
+        }
+
+        ul {
+            text-decoration: none;
+            list-style: none;
+            padding: 15px 0px;
+            margin: 0;
+            font-size: 24px;
+        }
     }
 }

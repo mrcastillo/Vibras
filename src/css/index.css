@@ -6,7 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: salmon;
+  background: white;
   overflow-x: hidden;
   position: relative;
   max-width: 100%; }
@@ -32,7 +32,7 @@ a {
       display: flex;
       flex-flow: column;
       color: white;
-      padding: 8px 0px; }
+      margin: 1em 0em; }
       .app-container .navi-container .navi-overlay {
         height: 100%;
         width: 0;
@@ -104,64 +104,102 @@ a {
       padding: 5px 0px;
       background: black;
       width: 100%; }
-    .homelanding-container .homelanding-textinfo {
-      display: none;
-      visibility: hidden; }
     .homelanding-container .homelanding-image {
       display: flex;
       flex-flow: column;
       z-index: 0;
       background: rgba(0, 0, 0, 0.9);
-      background-image: url("../images/candle3_trans.png");
-      height: 500px;
+      background-image: url("../images/candle11.JPG");
+      height: 400px;
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center; }
+      background-position: top;
+      /*
+            .homelanding-text {
+                font-size: 20px;
+                font-weight: 600;
+                color: white;
+                //padding-top: 20%;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+
+                span {
+                    display: block;
+                    text-align: center;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    background: rgba(0, 0, 0, .0);
+                    padding: 8px 0px;
+                    font-size: 34px;
+                    font-family: 'Lobster', cursive;
+                }
+
+                .homelanding-text-buttons {
+                    display: flex;
+                    flex-flow: column;
+                    margin-top: 1em;                    
+                    text-align: center;
+                    align-items: flex-end;
+                    //height: 100%;
+
+                    button {
+                        width: auto;
+                        font-size: 18px;
+                        padding: 10px 30px;
+                        background: rgba(255, 255, 255, 1);
+                        color: black;
+                        opacity: 1;
+                        border: 2px solid $custom-pink;
+                        //border: 2px solid black;
+                        //border-radius: 12px;
+                        color: $custom-pink;
+                        //color: black;
+                        //font-weight: 600;
+                        text-align: center;
+                        align-self: center;
+                        //font-family: 'Lobster', cursive;
+                    }
+                }
+            }*/ }
       .homelanding-container .homelanding-image .homelanding-text {
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
         display: flex;
         flex-flow: column;
-        justify-content: center; }
-        .homelanding-container .homelanding-image .homelanding-text span {
-          display: block;
-          text-align: center;
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-          background: rgba(0, 0, 0, 0);
-          padding: 8px 0px;
-          font-size: 34px;
-          font-family: 'Lobster', cursive; }
-        .homelanding-container .homelanding-image .homelanding-text .homelanding-text-buttons {
-          display: flex;
-          flex-flow: column;
-          margin-top: 1em;
-          text-align: center;
-          align-items: flex-end; }
-          .homelanding-container .homelanding-image .homelanding-text .homelanding-text-buttons button {
-            width: auto;
-            font-size: 20px;
-            padding: 10px 30px;
-            background: white;
-            color: black;
-            opacity: 1;
-            border: 2px solid #e72444;
-            color: #e72444;
-            font-weight: 600;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3em;
+        height: 100%; }
+        .homelanding-container .homelanding-image .homelanding-text div {
+          width: 100%;
+          padding: 15px 0px;
+          background: rgba(0, 0, 0, 0.4); }
+          .homelanding-container .homelanding-image .homelanding-text div h3 {
+            font-size: 32px;
+            font-family: "Lobster", cursive;
             text-align: center;
-            align-self: center;
-            font-family: 'Lobster', cursive; }
+            margin: 0;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-weight: 400; }
+          .homelanding-container .homelanding-image .homelanding-text div p {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-family: "Lobster", cursive;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   .homelanding-break {
     height: 10px;
     background: salmon; }
   .homelanding-inventory-container {
     display: flex;
     flex-flow: column;
-    padding: 0em 0em 3em 0px; }
+    padding: 0em 0em 3em 0px;
+    background: white; }
     .homelanding-inventory-container .homelanding-inventory-banner {
       text-align: center;
       font-family: 'Lobster', cursive; }
@@ -180,7 +218,8 @@ a {
       display: flex;
       flex-flow: row;
       overflow-y: scroll;
-      width: 100%; }
+      width: 100%;
+      padding: 25px 0px; }
       .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item {
         display: flex;
         flex-flow: column;
@@ -203,9 +242,18 @@ a {
           font-weight: 600; }
         .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item span {
           text-align: center; }
+        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item #reviews {
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center; }
+          .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item #reviews span {
+            font-size: 18px;
+            color: black;
+            font-weight: 600; }
   .homelanding-subscribe-container {
     background: rgba(0, 0, 0, 0.9);
-    background-image: url("../images/candle1_trans.png");
+    background-image: url("../images/candle10.JPG");
     height: 500px;
     width: 100%;
     background-repeat: no-repeat;
@@ -279,13 +327,12 @@ a {
     flex-flow: column; }
     .shop-container .shop-home-items-banner {
       text-align: center;
-      margin: 1em 0em .5em 0em; }
-    .shop-container .shop-home-items-text {
-      text-align: center;
-      font-size: 14px;
-      margin: 0px 15px;
-      padding: 10px 10px;
-      background: lightgrey; }
+      margin: 1em 0em 0em 0em; }
+      .shop-container .shop-home-items-banner span {
+        font-size: 32px;
+        font-weight: 600; }
+      .shop-container .shop-home-items-banner p {
+        margin-bottom: 0; }
     .shop-container .shop-categories {
       display: flex;
       flex-flow: row;
@@ -294,7 +341,12 @@ a {
       margin: 1em 0em 1em 0em; }
       .shop-container .shop-categories span {
         text-align: center;
-        border-right: .5px solid black; }
+        width: 60px;
+        font-weight: 600;
+        padding: 5px 0px;
+        border-bottom: 1px solid black; }
+    .shop-container .shop-filters {
+      margin: 1em 0em; }
     .shop-container .shop-home-items-container {
       display: flex;
       flex-flow: column; }
@@ -320,7 +372,7 @@ a {
                 */ }
         .shop-container .shop-home-items-container .shop-home-item .shop-home-item-img {
           width: 100%;
-          height: 300px; }
+          height: 150px; }
           .shop-container .shop-home-items-container .shop-home-item .shop-home-item-img img {
             width: 100%;
             height: 100%;
@@ -333,6 +385,7 @@ a {
           flex-flow: row;
           margin: 10px 0px; }
           .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info .shop-home-item-info-text {
+            text-align: left;
             flex: 1; }
             .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info .shop-home-item-info-text h2 {
               color: #e72444;
@@ -353,7 +406,17 @@ a {
   .footer-container {
     background: rgba(0, 0, 0, 0.9);
     text-align: center;
-    color: white; } }
+    color: white; }
+    .footer-container .footer-social {
+      display: flex;
+      flex-flow: column;
+      padding: 15px 0px; }
+    .footer-container ul {
+      text-decoration: none;
+      list-style: none;
+      padding: 15px 0px;
+      margin: 0;
+      font-size: 24px; } }
 
 @media (min-width: 992px) and (max-width: 1199px), (min-width: 992px), (min-width: 812px) {
   .app-container {

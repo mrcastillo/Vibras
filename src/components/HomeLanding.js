@@ -9,33 +9,33 @@ const HomeLandingSubscribe = () => {
 
     const goToShop = () => {
         history.push("/shop");
-    }
+    };
+
     return (
         <div className={"homelanding-container"}>
-            
             {/* 
-            <div className={"homelanding-textinfo"}>
-                <h1>Natural Soy Candles</h1>
-                <p>Handcrafted & Homemade</p>
-                <button>View All Candles</button>
-            </div>
-            */}
             <div className={"sale"}>
                 Get 10% off all sales!
             </div>
+            */}
             <div className={"homelanding-image"}>
-                
-                <Navi/>
 
+                <Navi />
+
+                <div className={"homelanding-text"}>
+                    <div>
+                        <h3>Vibras</h3>
+                        <p>Handmade Soy Candles</p>
+                    </div>
+                </div>
+                
+                {/* 
                 <div className={"homelanding-text"}>
                     <span>
                         Handmade all natural candles
                     </span>
-                    
-                    <div className={"homelanding-text-buttons"}>
-                        <button onClick={goToShop}>Shop Vibras</button>
-                    </div>
                 </div>
+                */}
             </div>
         </div>
     )

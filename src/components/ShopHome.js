@@ -10,32 +10,47 @@ import candle4 from "../images/candle4.jpg"
 const ShopHome = () => {
     return (
         <React.Fragment>
-            <Navi color={"black"}/>
+            <Navi color={"black"} includeMiddle={true} />
 
-            <h1 className={"shop-home-items-banner"}>
-                <span>The Vibras Collection</span>
-            </h1>
-
-            <p className={"shop-home-items-text"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-
-            <div className={"shop-categories"}>
-                <span>Newest Releases</span>
-                <span>Soy Candles</span>
-                <span>Flavored Candles</span>
-                <span>Vaporub Candles</span>
+            <div className={"shop-home-items-banner"}>
+                <span>Shop</span>
+                <p>View the latest from The Vibras Collection</p>
             </div>
 
+            <div className={"shop-categories"}>
+                <span>Newest</span>
+                <span>Soy</span>
+                <span>Flavored</span>
+                <span>Vaporub</span>
+            </div>
+
+            <hr style={{ "background": "black", "width": "90%" }} />
             <div className={"shop-filters"}>
 
             </div>
 
             <div className={"shop-home-items-container"}>
                 <div className={"shop-home-item"}>
+                    <div className={"shop-home-item-info"}>
+                        <div className={"shop-home-item-info-text"}>
+                            <h2>Soy Candle</h2>
+                            <p>Soy, Blueberries, Apples, Corn</p>
+                            <p>$10</p>
+                        </div>
+
+                        <div className={"shop-home-item-info-view"}>
+                            {/* <button>View</button> */}
+                        </div>
+                    </div>
+
                     <div className={"shop-home-item-img"}>
                         <img src={candle1} />
                     </div>
+                </div>
+                
+                <hr style={{ "background": "black", "width": "25%" }} />
+
+                <div className={"shop-home-item"}>
 
                     <div className={"shop-home-item-info"}>
                         <div className={"shop-home-item-info-text"}>
@@ -48,64 +63,41 @@ const ShopHome = () => {
                             {/* <button>View</button> */}
                         </div>
                     </div>
-                </div>
 
-                <div className={"shop-home-item"}>
                     <div className={"shop-home-item-img"}>
                         <img src={candle2} />
                     </div>
-
-                    <div className={"shop-home-item-info"}>
-                        <div className={"shop-home-item-info-text"}>
-                            <h2>Soy Candle</h2>
-                            <p>Soy, Blueberries, Apples, Corn</p>
-                            <p>$10</p>
-                        </div>
-
-                        <div className={"shop-home-item-info-view"}>
-                            {/* <button>View</button> */}
-                        </div>
-                    </div>
                 </div>
 
-                <div className={"shop-home-item"}>
-                    <div className={"shop-home-item-img"}>
-                        <img src={candle3} />
-                    </div>
+                <hr style={{ "background": "black", "width": "25%" }} />
 
+                <div className={"shop-home-item"}>
                     <div className={"shop-home-item-info"}>
                         <div className={"shop-home-item-info-text"}>
                             <h2>Rose Candle</h2>
                             <p>Soy, Blueberries, Apples, Corn</p>
                             <p>$10</p>
                         </div>
+                    </div>
 
-                        {/*
-                        <div className={"shop-home-item-info-view"}>
-                             <button>View</button> 
-                             
-                        </div>
-                        */}
+                    <div className={"shop-home-item-img"}>
+                        <img src={candle3} />
                     </div>
                 </div>
 
-                <div className={"shop-home-item"}>
-                    <div className={"shop-home-item-img"}>
-                        <img src={candle4} />
-                    </div>
+                <hr style={{ "background": "black", "width": "25%" }} />
 
+                <div className={"shop-home-item"}>
                     <div className={"shop-home-item-info"}>
                         <div className={"shop-home-item-info-text"}>
                             <h2>Vapo Candle</h2>
                             <p>Soy, Blueberries, Apples, Corn</p>
                             <p>$10</p>
                         </div>
+                    </div>
 
-                        {/*
-                        <div className={"shop-home-item-info-view"}>
-                             <button>View</button> 
-                        </div>
-                        */}
+                    <div className={"shop-home-item-img"}>
+                        <img src={candle4} />
                     </div>
                 </div>
 
@@ -114,8 +106,8 @@ const ShopHome = () => {
                 </div>
             </div>
 
-            
-            
+            <hr style={{ "background": "black", "width": "25%" }} />
+
             <HomeLandingIG />
             {/* 
             <div className={"homelanding-break"}></div>
