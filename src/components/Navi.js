@@ -16,9 +16,26 @@ const closeMobileNavi = (event) => {
     naviOverlayWidth.style.width = "0%";
 };
 
-const Navi = () => {
+const IncludeNaviMiddle = () => {
+    return(
+        <React.Fragment>
+            <div className={"navi-brand"}>
+                <Link to={"/"}>
+                    <span>Vibras</span>
+                </Link>
+            </div>
+            <div className={"navi-social"}>
+                <Link to={"/"}>
+                    <span>by Emily</span>
+                </Link>
+            </div>
+        </React.Fragment>
+    )
+}
+
+const Navi = (props) => {
     return (
-        <div className={"navi-container"}>
+        <div className={"navi-container"} style={{"backgroundColor" : props.color}}>
 
             <div className={"navi-overlay"} onClick={closeMobileNavi}>
                 <div className={"navi-overlay-close"}>
@@ -58,17 +75,10 @@ const Navi = () => {
                     <span className="material-icons">reorder</span>
                 </div>
 
-                <div className={"navi-options-sm-middle"}>
-                    <div className={"navi-brand"}>
-                        <Link to={"/"}>
-                            <span>Vibras</span>
-                        </Link>
-                    </div>
-                    <div className={"navi-social"}>
-                        <Link to={"/"}>
-                            <span>by Emily</span>
-                        </Link>
-                    </div>
+                <div className={"navi-options-sm-middle"} onClick={openMobileNavi}>
+                    {
+                        props.includeMiddle ? IncludeNaviMiddle() : null
+                    }
                 </div>
                 
                 <div className={"navi-options-sm-right"}>

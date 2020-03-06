@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: salmon;
+  background: white;
   overflow-x: hidden;
   position: relative;
   max-width: 100%;
@@ -19,6 +19,6 @@ a {
   text-decoration: inherit;
 }
 
-@import "https://fonts.googleapis.com/css?family=Lobster|Bad+Script&display=swap";
+@import "https://fonts.googleapis.com/css?family=Lobster|Bad+Script1&display=swap";
 @import "./small.scss";
 @import "./medium.scss";

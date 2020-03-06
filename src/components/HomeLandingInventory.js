@@ -9,7 +9,10 @@ const HomeLandingInventory = () => {
     return (
         <div className={"homelanding-inventory-container"}>
 
-            <h1 className={"homelanding-inventory-banner"}>Shop Vibras Collections</h1>
+            <h1 className={"homelanding-inventory-banner"}>
+                Handmade Natural Candles
+            </h1>
+            
             <button className={"homelanding-inventory-button"}>
                 Shop All
             </button>
