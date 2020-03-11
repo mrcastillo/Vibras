@@ -1,11 +1,13 @@
 import React from "react";
-
-import candle1 from "../images/candle1.jpg"
-import candle2 from "../images/candle2.jpg"
-import candle3 from "../images/candle3.jpg"
-import candle4 from "../images/candle4.jpg"
+import { useHistory } from "react-router-dom";
 
 const HomeLandingInventory = () => {
+    const history = useHistory();
+
+    const goToShop = (e) => {
+        e.preventDefault();
+        history.push("/shop")
+    }
     return (
         <div className={"homelanding-inventory-container"}>
 
@@ -13,7 +15,7 @@ const HomeLandingInventory = () => {
                 Handmade Natural Candles
             </h1>
             
-            <button className={"homelanding-inventory-button"}>
+            <button className={"homelanding-inventory-button"} onClick={goToShop}>
                 Shop All
             </button>
 

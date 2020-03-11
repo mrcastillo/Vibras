@@ -13,7 +13,6 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         //margin: 1em 1em 0em 1em;
         border-radius: 3px;
 
-
         .homelanding-banner {
             display: flex;
             flex-flow: row;
@@ -28,7 +27,8 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             flex-flow: column;
             color: white;
             //padding: 8px 0px;
-            margin: 1em 0em;
+            margin: 0em 0em;
+            padding: 15px 0em;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             
@@ -144,7 +144,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             z-index: 0;
 
             background: rgba(0, 0, 0, .9);
-            background-image: url("../images/candle11.JPG"); 
+            background-image: url("../images/candle11.jpeg"); 
             height: 400px;
             width: 100%;
             background-repeat: no-repeat;
@@ -327,7 +327,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
     .homelanding-subscribe-container {
         background: rgba(0, 0, 0, .9);
-        background-image: url("../images/candle10.JPG"); 
+        background-image: url("../images/candle10.jpeg"); 
         height: 500px;
         width: 100%;
         background-repeat: no-repeat;
@@ -427,12 +427,13 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
     .shop-container {
         display: flex;
         flex-flow: column;
+        
 
         .shop-home-items-banner {
             text-align: center;
-            margin: 1em 0em 0em 0em;
+            //margin: 1em 0em 0em 0em;
+            padding: 15px 0px;
             
-
             span {
                 font-size: 32px;
                 //text-decoration: underline;
@@ -440,29 +441,18 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
 
             p {
-                margin-bottom: 0;
+                margin: 0;
+                margin: 10px 0px 0px 0px;
+                font-style: italic;
             }
         }
 
         .shop-categories {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 1em 0em 1em 0em;
-
-            span {
-                text-align: center;
-                width: 60px;
-                font-weight: 600;
-                padding: 5px 0px;
-                //border-right: .5px solid black;
-                border-bottom: 1px solid black;
-            }
+            
         }
 
         .shop-filters {
-            margin: 1em 0em;
+            //margin: 1em 0em;
         }
 
         .shop-home-items-container {
@@ -504,10 +494,10 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
                     .shop-home-item-info-text {
                         text-align: left;
-                        flex: 1;
+                        flex-basis: 80%;
 
                         h2 {
-                            color: $custom-pink;
+                            //color: $custom-pink;
                             margin: 0;
                         }
 
@@ -516,22 +506,21 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                             font-weight: 600;
                         }
                     }
-                }
-                /*
-                .shop-home-item-info-view {
-                    text-align: end;
-                    flex: 1;
-                    align-self: center;
-                
-                    button {
-                        padding: 20px 20px;
-                        background: white;
-                        border: 1px solid $custom-pink;
-                        color: $custom-pink;
-                        font-size: 16px;
+
+                    .shop-home-item-info-view {
+                        text-align: end;
+                        flex: 1;
+                        align-self: flex-end;
+                    
+                        button {
+                            padding: 20px 20px;
+                            background: white;
+                            border: 1px solid $custom-pink;
+                            color: $custom-pink;
+                            font-size: 16px;
+                        }
                     }
                 }
-                */
             }
             
             .shop-home-shopall {

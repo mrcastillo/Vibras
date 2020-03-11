@@ -18,18 +18,18 @@ const ShopHome = () => {
             </div>
 
             <div className={"shop-categories"}>
-                <span>Newest</span>
-                <span>Soy</span>
-                <span>Flavored</span>
-                <span>Vaporub</span>
+                
             </div>
 
-            <hr style={{ "background": "black", "width": "90%" }} />
+            {/* <hr style={{ "background": "black", "width": "90%" }} /> */}
             <div className={"shop-filters"}>
 
             </div>
 
             <div className={"shop-home-items-container"}>
+
+                <hr style={{ "background": "black", "width": "25%" }} />
+
                 <div className={"shop-home-item"}>
                     <div className={"shop-home-item-info"}>
                         <div className={"shop-home-item-info-text"}>
@@ -39,7 +39,7 @@ const ShopHome = () => {
                         </div>
 
                         <div className={"shop-home-item-info-view"}>
-                            {/* <button>View</button> */}
+                            <button>View</button>
                         </div>
                     </div>
 
@@ -47,8 +47,6 @@ const ShopHome = () => {
                         <img src={candle1} />
                     </div>
                 </div>
-                
-                <hr style={{ "background": "black", "width": "25%" }} />
 
                 <div className={"shop-home-item"}>
 
@@ -69,8 +67,6 @@ const ShopHome = () => {
                     </div>
                 </div>
 
-                <hr style={{ "background": "black", "width": "25%" }} />
-
                 <div className={"shop-home-item"}>
                     <div className={"shop-home-item-info"}>
                         <div className={"shop-home-item-info-text"}>
@@ -84,8 +80,6 @@ const ShopHome = () => {
                         <img src={candle3} />
                     </div>
                 </div>
-
-                <hr style={{ "background": "black", "width": "25%" }} />
 
                 <div className={"shop-home-item"}>
                     <div className={"shop-home-item-info"}>
@@ -105,8 +99,6 @@ const ShopHome = () => {
                     <button>Shop All</button>
                 </div>
             </div>
-
-            <hr style={{ "background": "black", "width": "25%" }} />
 
             <HomeLandingIG />
             {/* 
