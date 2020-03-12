@@ -13,11 +13,11 @@ const HomeLandingSubscribe = () => {
 
     return (
         <div className={"homelanding-container"}>
-            {/* 
+            
             <div className={"sale"}>
                 Get 10% off all sales!
             </div>
-            */}
+            
             <div className={"homelanding-image"}>
 
                 <Navi />
@@ -27,15 +27,10 @@ const HomeLandingSubscribe = () => {
                         <h3>Vibras</h3>
                         <p>Handmade Soy Candles</p>
                     </div>
+
+                    <button className={"vibras-button-1"} onClick={goToShop}>View Candles</button>
                 </div>
                 
-                {/* 
-                <div className={"homelanding-text"}>
-                    <span>
-                        Handmade all natural candles
-                    </span>
-                </div>
-                */}
             </div>
         </div>
     )

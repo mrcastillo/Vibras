@@ -99,57 +99,7 @@
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: top;
-      /*
-            .homelanding-text {
-                font-size: 20px;
-                font-weight: 600;
-                color: white;
-                //padding-top: 20%;
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-
-                span {
-                    display: block;
-                    text-align: center;
-                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                    background: rgba(0, 0, 0, .0);
-                    padding: 8px 0px;
-                    font-size: 34px;
-                    font-family: 'Lobster', cursive;
-                }
-
-                .homelanding-text-buttons {
-                    display: flex;
-                    flex-flow: column;
-                    margin-top: 1em;                    
-                    text-align: center;
-                    align-items: flex-end;
-                    //height: 100%;
-
-                    button {
-                        width: auto;
-                        font-size: 18px;
-                        padding: 10px 30px;
-                        background: rgba(255, 255, 255, 1);
-                        color: black;
-                        opacity: 1;
-                        border: 2px solid $custom-pink;
-                        //border: 2px solid black;
-                        //border-radius: 12px;
-                        color: $custom-pink;
-                        //color: black;
-                        //font-weight: 600;
-                        text-align: center;
-                        align-self: center;
-                        //font-family: 'Lobster', cursive;
-                    }
-                }
-            }*/ }
+      background-position: top; }
       .homelanding-container .homelanding-image .homelanding-text {
         display: flex;
         flex-flow: column;
@@ -163,19 +113,20 @@
           padding: 15px 0px;
           background: rgba(0, 0, 0, 0.4); }
           .homelanding-container .homelanding-image .homelanding-text div h3 {
-            font-size: 32px;
-            font-family: "Lobster", cursive;
+            font-size: 40px;
+            font-family: 'Lobster', cursive;
             text-align: center;
             margin: 0;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            font-weight: 400; }
+            font-weight: 600; }
           .homelanding-container .homelanding-image .homelanding-text div p {
             width: 100%;
             text-align: center;
             margin: 0;
             padding: 0;
-            font-weight: 400;
-            font-family: "Lobster", cursive;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Lobster', cursive;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   .homelanding-break {
     height: 10px;
@@ -183,7 +134,7 @@
   .homelanding-inventory-container {
     display: flex;
     flex-flow: column;
-    padding: 0em 0em 3em 0px;
+    padding: 0em 0em 1em 0px;
     background: white; }
     .homelanding-inventory-container .homelanding-inventory-banner {
       text-align: center;
@@ -204,7 +155,7 @@
       flex-flow: row;
       overflow-y: scroll;
       width: 100%;
-      padding: 25px 0px; }
+      padding: 0px 0px 0px 0px; }
       .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item {
         display: flex;
         flex-flow: column;
@@ -263,16 +214,11 @@
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
     .homelanding-subscribe-container input {
       width: 75%;
-      padding: 15px 10px;
+      padding: 15px 0px;
       text-align: center;
-      border: .5px solid black;
-      margin: 15px 0px; }
-    .homelanding-subscribe-container button {
-      padding: 12px 20px;
-      border: 1px solid #e72444;
       font-size: 16px;
-      color: #e72444;
-      background: white; }
+      border: .5px solid black;
+      margin: 0px 0px 5px 0px; }
   .homelanding-IG-container {
     display: flex;
     flex-flow: column; }
@@ -297,16 +243,6 @@
           height: 100%;
           object-fit: cover;
           overflow: hidden; }
-    .homelanding-IG-container button {
-      width: 50%;
-      text-align: center;
-      align-self: center;
-      border: 1px solid #e72444;
-      color: #e72444;
-      padding: 15px 0px;
-      margin: 15px 0;
-      font-size: 18px;
-      background: white; }
   .shop-container {
     display: flex;
     flex-flow: column; }
@@ -325,26 +261,27 @@
       flex-flow: column; }
       .shop-container .shop-home-items-container .shop-home-item {
         display: flex;
-        flex-flow: column;
-        margin: 0px 15px 1em 15px;
+        flex-flow: row;
+        margin: 0px 0px 15px 0px;
+        padding: 0px 0px;
         text-align: center; }
         .shop-container .shop-home-items-container .shop-home-item .shop-home-item-img {
           width: 100%;
-          height: 150px; }
+          height: 150px;
+          justify-self: flex-end; }
           .shop-container .shop-home-items-container .shop-home-item .shop-home-item-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             overflow: hidden;
-            transition: transform .2s;
-            border-radius: 3px; }
+            transition: transform .2s; }
         .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info {
           display: flex;
           flex-flow: row;
-          margin: 10px 0px; }
+          padding: 0px 15px; }
           .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info .shop-home-item-info-text {
-            text-align: left;
-            flex-basis: 80%; }
+            text-align: center;
+            align-self: center; }
             .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info .shop-home-item-info-text h2 {
               margin: 0; }
             .shop-container .shop-home-items-container .shop-home-item .shop-home-item-info .shop-home-item-info-text p {
@@ -370,6 +307,18 @@
           background: white;
           color: #e72444;
           font-size: 18px; }
+  .vibras-button-1 {
+    width: 75%;
+    font-size: 14px;
+    padding: 15px 0px;
+    background: #3b5998;
+    opacity: 1;
+    border: 1px solid black;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    align-self: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   .footer-container {
     background: rgba(0, 0, 0, 0.9);
     text-align: center;

@@ -15,6 +15,7 @@ const ShopHome = () => {
             <div className={"shop-home-items-banner"}>
                 <span>Shop</span>
                 <p>View the latest from The Vibras Collection</p>
+                <hr style={{ "background": "black", "width": "90%" }} />
             </div>
 
             <div className={"shop-categories"}>
@@ -26,94 +27,6 @@ const ShopHome = () => {
 
             </div>
 
-            <div className={"shop-home-items-container"}>
-
-                <hr style={{ "background": "black", "width": "25%" }} />
-
-                <div className={"shop-home-item"}>
-                    <div className={"shop-home-item-info"}>
-                        <div className={"shop-home-item-info-text"}>
-                            <h2>Soy Candle</h2>
-                            <p>Soy, Blueberries, Apples, Corn</p>
-                            <p>$10</p>
-                        </div>
-
-                        <div className={"shop-home-item-info-view"}>
-                            <button>View</button>
-                        </div>
-                    </div>
-
-                    <div className={"shop-home-item-img"}>
-                        <img src={candle1} />
-                    </div>
-                </div>
-
-                <div className={"shop-home-item"}>
-
-                    <div className={"shop-home-item-info"}>
-                        <div className={"shop-home-item-info-text"}>
-                            <h2>Soy Candle</h2>
-                            <p>Soy, Blueberries, Apples, Corn</p>
-                            <p>$10</p>
-                        </div>
-
-                        <div className={"shop-home-item-info-view"}>
-                            {/* <button>View</button> */}
-                        </div>
-                    </div>
-
-                    <div className={"shop-home-item-img"}>
-                        <img src={candle2} />
-                    </div>
-                </div>
-
-                <div className={"shop-home-item"}>
-                    <div className={"shop-home-item-info"}>
-                        <div className={"shop-home-item-info-text"}>
-                            <h2>Rose Candle</h2>
-                            <p>Soy, Blueberries, Apples, Corn</p>
-                            <p>$10</p>
-                        </div>
-                    </div>
-
-                    <div className={"shop-home-item-img"}>
-                        <img src={candle3} />
-                    </div>
-                </div>
-
-                <div className={"shop-home-item"}>
-                    <div className={"shop-home-item-info"}>
-                        <div className={"shop-home-item-info-text"}>
-                            <h2>Vapo Candle</h2>
-                            <p>Soy, Blueberries, Apples, Corn</p>
-                            <p>$10</p>
-                        </div>
-                    </div>
-
-                    <div className={"shop-home-item-img"}>
-                        <img src={candle4} />
-                    </div>
-                </div>
-
-                <div className={"shop-home-shopall"}>
-                    <button>Shop All</button>
-                </div>
-            </div>
-
-            <HomeLandingIG />
-            {/* 
-            <div className={"homelanding-break"}></div>
-                
-            <div className={"shop-home-item-subscribe"}>
-                <h1>Get the latest news</h1>
-                <p>Subscribe now to get the latest from Vibras</p>
-
-                <form>
-                    <input type={"text"} id={"email"} placeholder={"my email"} value={""}></input>
-                    <input type={"submit"} id={"submit"} value={"Subscribe"} />
-                </form>
-            </div>
-            */}
         </React.Fragment>
     )
 };

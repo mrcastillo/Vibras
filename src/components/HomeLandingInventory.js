@@ -12,12 +12,13 @@ const HomeLandingInventory = () => {
         <div className={"homelanding-inventory-container"}>
 
             <h1 className={"homelanding-inventory-banner"}>
-                Handmade Natural Candles
+                Natural Handmade Candles
             </h1>
-            
+            {/* 
             <button className={"homelanding-inventory-button"} onClick={goToShop}>
                 Shop All
             </button>
+            */}
 
             <div className={"homelanding-inventory-collection-row"}>
                 <div className={"homelanding-inventory-collection-item"}>
@@ -67,7 +68,7 @@ const HomeLandingInventory = () => {
                     </span>
                     <span>from $10</span>
                 </div>
-
+  
 
                 <div className={"homelanding-inventory-collection-item"}>
                     <div className={"homelanding-inventory-collection-item-img"}>
@@ -86,6 +87,8 @@ const HomeLandingInventory = () => {
                 </div>
             </div>
 
+            <br />
+            <button className={"vibras-button-1"}>View Inventory</button>
             {/* <hr style={{"width":"100%"}}/> */}
 
         </div>

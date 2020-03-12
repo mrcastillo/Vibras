@@ -34,7 +34,8 @@ const HomeLandingIG = () => {
                 </div>               
             </div>
             
-            <button>Instagram</button>
+            <button className={"vibras-button-1"}>Instagram</button>
+            <br />
         </div>
     )
 };

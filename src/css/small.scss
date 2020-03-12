@@ -29,6 +29,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             //padding: 8px 0px;
             margin: 0em 0em;
             padding: 15px 0em;
+            
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             
@@ -160,18 +161,19 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 margin-bottom: 3em;
                 height: 100%;
                 
+                
                 div {
                     width: 100%;
                     padding: 15px 0px;
                     background: rgba(0,0,0, 0.4);
 
                     h3 {
-                        font-size: 32px;
-                        font-family: "Lobster", cursive;
+                        font-size: 40px;
+                        font-family: 'Lobster', cursive;
                         text-align: center;
                         margin: 0;
                         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                        font-weight: 400;
+                        font-weight: 600;
                     }
 
                     p {
@@ -179,63 +181,13 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                         text-align: center;
                         margin: 0;
                         padding: 0;
-                        font-weight: 400;
-                        font-family: "Lobster", cursive;
+                        font-size: 22px;
+                        font-weight: 600;
+                        font-family: 'Lobster', cursive;
                         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
                     }
                 }
             }
-
-            /*
-            .homelanding-text {
-                font-size: 20px;
-                font-weight: 600;
-                color: white;
-                //padding-top: 20%;
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-
-                span {
-                    display: block;
-                    text-align: center;
-                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                    background: rgba(0, 0, 0, .0);
-                    padding: 8px 0px;
-                    font-size: 34px;
-                    font-family: 'Lobster', cursive;
-                }
-
-                .homelanding-text-buttons {
-                    display: flex;
-                    flex-flow: column;
-                    margin-top: 1em;                    
-                    text-align: center;
-                    align-items: flex-end;
-                    //height: 100%;
-
-                    button {
-                        width: auto;
-                        font-size: 18px;
-                        padding: 10px 30px;
-                        background: rgba(255, 255, 255, 1);
-                        color: black;
-                        opacity: 1;
-                        border: 2px solid $custom-pink;
-                        //border: 2px solid black;
-                        //border-radius: 12px;
-                        color: $custom-pink;
-                        //color: black;
-                        //font-weight: 600;
-                        text-align: center;
-                        align-self: center;
-                        //font-family: 'Lobster', cursive;
-                    }
-                }
-            }*/
         }
     }
 
@@ -247,7 +199,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
     .homelanding-inventory-container {
         display: flex;
         flex-flow: column;
-        padding: 0em 0em 3em 0px;
+        padding: 0em 0em 1em 0px;
         background: white;
         //background-image: linear-gradient(to  left, rgba(234, 216, 216, .0), rgba(234, 216, 216, 1));
     
@@ -276,7 +228,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             flex-flow: row;
             overflow-y: scroll;
             width: 100%;
-            padding: 25px 0px;
+            padding: 0px 0px 0px 0px;
 
             .homelanding-inventory-collection-item {
                 display: flex;
@@ -358,18 +310,12 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
         input {
             width: 75%;
-            padding: 15px 10px;
+            padding: 15px 0px;
             text-align: center;
-            border: .5px solid black;
-            margin: 15px 0px;
-        }
-
-        button {
-            padding: 12px 20px;
-            border: 1px solid $custom-pink;
             font-size: 16px;
-            color: $custom-pink;
-            background: white;
+            border: .5px solid black;
+            margin: 0px 0px 5px 0px;
+            //border-radius: 5px;
         }
     }
 
@@ -410,18 +356,6 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 }
             }
         }
-
-        button {
-            width: 50%;
-            text-align: center;
-            align-self: center;
-            border: 1px solid $custom-pink;
-            color: $custom-pink;
-            padding: 15px 0px;
-            margin: 15px 0;
-            font-size: 18px;
-            background: white;
-        }
     }
 
     .shop-container {
@@ -461,14 +395,15 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
             .shop-home-item {
                 display: flex;
-                flex-flow: column;
-                margin: 0px 15px 1em 15px;
+                flex-flow: row;
+                margin: 0px 0px 15px 0px;
+                padding: 0px 0px;
                 text-align: center;
-
 
                 .shop-home-item-img {
                     width: 100%;
                     height: 150px;
+                    justify-self: flex-end;
                     
                     img {
                         width: 100%;
@@ -476,7 +411,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                         object-fit: cover;
                         overflow: hidden;
                         transition: transform .2s;
-                        border-radius: 3px;
+                        //border-radius: 3px;
                     }
 
                     img:hover {
@@ -487,14 +422,12 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 .shop-home-item-info {
                     display: flex;
                     flex-flow: row;
-                    //@extend: 1px solid black;
-                    //@at-root: 1px solid black;
-                    margin: 10px 0px;
-                    //padding: 8px 0px;
-
+                    padding: 0px 15px;
+                    
                     .shop-home-item-info-text {
-                        text-align: left;
-                        flex-basis: 80%;
+                        text-align: center;
+                        align-self: center;
+                        
 
                         h2 {
                             //color: $custom-pink;
@@ -538,6 +471,24 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
         }
 
+    }
+
+
+    .vibras-button-1 {
+        //margin-top: 1em;
+        width: 75%;
+        font-size: 14px;
+        padding: 15px 0px;
+        background: #3b5998;
+        opacity: 1;
+        border: 1px solid black;
+        //border-radius: 50px;
+        color: white;
+        //margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        align-self: center;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .footer-container {

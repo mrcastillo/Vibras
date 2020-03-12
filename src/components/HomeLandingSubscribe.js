@@ -9,7 +9,7 @@ const HomeLandingAbout = () => {
 
             <input type={"text"} placeholder={"Email Address"}></input>
 
-            <button>Subscribe</button>
+            <button className={"vibras-button-1"}>Subscribe</button>
         </div>
     )
 };
