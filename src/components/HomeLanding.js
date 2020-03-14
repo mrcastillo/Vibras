@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import candleShop from "../images/candle1.jpg"
-import candleNew from "../images/candle3.jpg"
+import candleShop from "../images/candle1.jpg";
+import candleNew from "../images/candle3.jpg";
 import Navi from "../components/Navi";
 
 const HomeLandingSubscribe = () => {
