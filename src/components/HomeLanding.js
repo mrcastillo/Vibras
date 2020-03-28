@@ -1,7 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import candleShop from "../images/candle1.jpg";
-import candleNew from "../images/candle3.jpg";
 import Navi from "../components/Navi";
 
 const HomeLandingSubscribe = () => {
@@ -20,7 +18,7 @@ const HomeLandingSubscribe = () => {
             
             <div className={"homelanding-image"}>
 
-                <Navi />
+                <Navi color={"rgba(0,0,0, 0.4)"}/>
 
                 <div className={"homelanding-text"}>
                     <div>
@@ -28,10 +26,10 @@ const HomeLandingSubscribe = () => {
                         <p>Handmade Soy Candles</p>
                     </div>
 
-                    <button className={"vibras-button-1"} onClick={goToShop}>View Candles</button>
+                    <button className={"vibras-button-1"} onClick={goToShop}>Shop Now</button>
                 </div>
-                
             </div>
+            
         </div>
     )
 };

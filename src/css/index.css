@@ -18,9 +18,7 @@ a {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
   .app-container {
     display: flex;
-    flex-flow: column;
-    background: white;
-    border-radius: 3px; }
+    flex-flow: column; }
     .app-container .homelanding-banner {
       display: flex;
       flex-flow: row;
@@ -76,13 +74,13 @@ a {
           justify-content: center;
           align-items: center; }
           .app-container .navi-container .navi-options-sm .navi-options-sm-left span {
-            font-size: 28px; }
+            font-size: 20px; }
         .app-container .navi-container .navi-options-sm .navi-options-sm-middle {
           display: flex;
           flex-flow: column; }
           .app-container .navi-container .navi-options-sm .navi-options-sm-middle .navi-brand {
             font-family: 'Lobster', cursive;
-            font-size: 36px;
+            font-size: 24px;
             font-weight: 600;
             text-align: center; }
           .app-container .navi-container .navi-options-sm .navi-options-sm-middle .navi-social {
@@ -94,56 +92,58 @@ a {
           justify-content: center;
           align-items: center; }
           .app-container .navi-container .navi-options-sm .navi-options-sm-right span {
-            font-size: 28px; }
+            font-size: 20px; }
   .homelanding-container {
-    background: white;
     display: flex;
     flex-flow: column; }
     .homelanding-container .sale {
       color: white;
       text-align: center;
-      padding: 5px 0px;
+      padding: 10px 0px;
       background: black;
       width: 100%; }
     .homelanding-container .homelanding-image {
       display: flex;
       flex-flow: column;
       z-index: 0;
-      background: rgba(0, 0, 0, 0.9);
       background-image: url("../images/candle11.jpeg");
       height: 400px;
       width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: top; }
+      background-position: center; }
       .homelanding-container .homelanding-image .homelanding-text {
         display: flex;
         flex-flow: column;
         color: white;
         align-items: center;
         justify-content: center;
-        margin-bottom: 3em;
-        height: 100%; }
+        padding-bottom: 3em;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); }
         .homelanding-container .homelanding-image .homelanding-text div {
           width: 100%;
-          padding: 15px 0px;
-          background: rgba(0, 0, 0, 0.4); }
+          padding: 15px 0px; }
           .homelanding-container .homelanding-image .homelanding-text div h3 {
-            font-size: 40px;
+            font-size: 32px;
             font-family: 'Lobster', cursive;
             text-align: center;
             margin: 0;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            font-weight: 600; }
+            font-weight: 600;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
           .homelanding-container .homelanding-image .homelanding-text div p {
             width: 100%;
             text-align: center;
             margin: 0;
             padding: 0;
-            font-size: 22px;
+            font-size: 16px;
             font-weight: 600;
-            font-family: 'Lobster', cursive;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+            opacity: .7;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+        .homelanding-container .homelanding-image .homelanding-text button {
+          margin-top: 0em;
+          padding: 12px 12px;
+          width: auto; }
   .homelanding-break {
     height: 10px;
     background: salmon; }
@@ -152,9 +152,24 @@ a {
     flex-flow: column;
     padding: 0em 0em 1em 0px;
     background: white; }
+    .homelanding-inventory-container .homelanding-inventory-thanks {
+      margin: 0;
+      font-family: "Lobster";
+      text-align: center;
+      font-size: 24px;
+      background-image: linear-gradient(to top, rgba(234, 216, 216, 0.2), #ead8d8); }
     .homelanding-inventory-container .homelanding-inventory-banner {
       text-align: center;
-      font-family: 'Lobster', cursive; }
+      font-family: 'Lobster', cursive;
+      font-size: 32px;
+      margin: .5em 1em;
+      padding: .5em 1em;
+      border: 5px solid whitesmoke; }
+      .homelanding-inventory-container .homelanding-inventory-banner p {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        opacity: .7; }
     .homelanding-inventory-container .homelanding-inventory-button {
       width: 25%;
       font-size: 14px;
@@ -166,43 +181,19 @@ a {
       margin-bottom: 15px;
       font-weight: 600;
       align-self: center; }
-    .homelanding-inventory-container .homelanding-inventory-collection-row {
+    .homelanding-inventory-container .homelanding-inventory-collection-column {
       display: flex;
-      flex-flow: row;
-      overflow-y: scroll;
-      width: 100%;
-      padding: 0px 0px 0px 0px; }
-      .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item {
-        display: flex;
-        flex-flow: column;
-        padding-left: 10px; }
-        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item .homelanding-inventory-collection-item-img {
-          width: 100%;
-          height: 100px;
-          background-image: url("../images/candle3.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-          border-radius: 3px; }
-          .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item .homelanding-inventory-collection-item-img img {
-            width: 100%;
-            height: auto; }
-        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item p {
-          width: 150px;
-          text-align: center;
-          margin: 0;
-          font-weight: 600; }
-        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item span {
-          text-align: center; }
-        .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item #reviews {
-          display: flex;
-          flex-flow: row;
-          justify-content: center;
-          align-items: center; }
-          .homelanding-inventory-container .homelanding-inventory-collection-row .homelanding-inventory-collection-item #reviews span {
-            font-size: 18px;
-            color: black;
-            font-weight: 600; }
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; }
+      .homelanding-inventory-container .homelanding-inventory-collection-column #image {
+        width: 100%; }
+        .homelanding-inventory-container .homelanding-inventory-collection-column #image img {
+          max-width: 100%;
+          max-height: 100%; }
+      .homelanding-inventory-container .homelanding-inventory-collection-column p {
+        text-align: center;
+        font-weight: 600; }
   .homelanding-subscribe-container {
     background: rgba(0, 0, 0, 0.9);
     background-image: url("../images/candle10.jpeg");
@@ -324,17 +315,15 @@ a {
           color: #e72444;
           font-size: 18px; }
   .vibras-button-1 {
+    background: white;
+    color: black;
     width: 75%;
-    font-size: 14px;
     padding: 15px 0px;
-    background: #3b5998;
-    opacity: 1;
-    border: 1px solid black;
-    color: white;
     font-weight: 600;
-    font-size: 18px;
-    align-self: center;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 3px;
+    align-self: center; }
   .footer-container {
     background: rgba(0, 0, 0, 0.9);
     text-align: center;
