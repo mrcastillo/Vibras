@@ -1,8 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-
-
+import VibrasLogo from "../images/VibrasLogo-4.jpg";
 
 const openMobileNavi = (event) => {
     event.preventDefault();
@@ -16,27 +15,12 @@ const closeMobileNavi = (event) => {
     naviOverlayWidth.style.width = "0%";
 };
 
-const IncludeNaviMiddle = () => {
-    return(
-        <React.Fragment>
-            <div className={"navi-brand"}>
-                <Link to={"/"}>
-                    <span>Vibras</span>
-                </Link>
-            </div>
-            <div className={"navi-social"}>
-                <Link to={"/"}>
-                    <span>by Emily</span>
-                </Link>
-            </div>
-        </React.Fragment>
-    )
-}
 
 const Navi = (props) => {
     return (
-        <div className={"navi-container"} style={{"backgroundColor" : props.color}}>
+        <div className={"navi-container"}>
 
+            {/* Start of Overlay Code for Navigation */}
             <div className={"navi-overlay"} onClick={closeMobileNavi}>
                 <div className={"navi-overlay-close"}>
                     <span>Click to close</span>
@@ -50,39 +34,35 @@ const Navi = (props) => {
                 </div>
             </div>
 
-            {/* 
-            <div className={"navi-brand"}>
-                <Link to={"/"}>
-                        <span>Vibras</span>
-                </Link>
-            </div>
-            <div className={"navi-social"}>
-                <Link to={"/"}>
-                    <span>by Emily</span>
-                </Link>
-            </div>
-            */}
-
             <div className={"navi-options"}>
                 <div><Link to={"/"}>Home</Link></div>
                 <div><Link to={"/"}>About</Link></div>
                 <div><Link to={"/shop"}>Shop</Link></div>
                 <div><Link to={"/"}>Cart</Link></div>
             </div>
+            {/* End of Overlay Code for Navigation */}
 
-            <div className={"navi-options-sm"}>
-                <div className={"navi-options-sm-left"} onClick={openMobileNavi}>
-                    <span className="material-icons">reorder</span>
+            <div className={"navi-bar-sm"}>
+                <div className={"navi-bar-sm-left"} onClick={openMobileNavi}>
+                    <span className="material-icons">dehaze</span>
                 </div>
 
-                <div className={"navi-options-sm-middle"} onClick={openMobileNavi}>
-                    {
-                        props.includeMiddle ? IncludeNaviMiddle() : null
-                    }
-                </div>
+                <Link  to={"/"} className={"navi-bar-sm-middle"}>
+                    <div id={"logo"}>
+                        <img src={VibrasLogo} />
+                    </div>
+
+                    <div id={"logo-text"}>
+                        <div className={"navi-brand"}>
+                            <Link to={"/"}>
+                                <span>Vibras</span>
+                            </Link>
+                        </div>
+                    </div>
+                </Link>
                 
-                <div className={"navi-options-sm-right"}>
-                    <span className="material-icons">shopping_cart</span>
+                <div className={"navi-bar-sm-right"}>
+                     <span className="material-icons">shopping_cart</span>Cart
                 </div>
             </div>
         </div>
