@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
 import displayImage1 from "../images/VibrasMultipleCandles.png";
 import displayImage2 from "../images/VibrasMultipleCandles2.jpeg";
-import displayImage3 from "../images/VibrasSeedsRoseCandle2.jpg";
+import displayImage3 from "../images/candle11.jpeg";
+
+var background = "../images/VibrasMultipleCandles";
 
 const HomeLandingSubscribe = () => {
     const history = useHistory();
@@ -12,36 +14,31 @@ const HomeLandingSubscribe = () => {
         history.push("/shop");
     };
 
-
+    useEffect(() => {
+        window.scrollTo(0,0);
+    });
 
     return (
         <div className={"homelanding-container"}>
             
-            {/* 
-            <div className={"sale"}>
-                Get 10% off all sales!
+
+            <div className={"homelanding-intro-text"}>
+                Fall In Love With You - Handmade Candles
             </div>
-            */}
-            <div className={"homelanding-text"}>
-                <h3>Handmade Soy Candles</h3>
-                <p>Wholsome made candles that inspire & support your spaciousness. Learn what makes Vibras so great.</p>
-            </div>        
 
-            <div className={"homelanding-shop-display"}>
-                <ul>
-                    <li>Featured</li>
-                    <li>1/3</li>
-                </ul>
-
-                <div className={"homelanding-shop-display-images"}>
-                    <img src={displayImage1} />
+            <div className={"homelanding-shop-display"} style={{backgroundImage: `url(${displayImage3})`}}>
+                <div className={"homelanding-shop-display-text"}>
+                    1/3
                 </div>
 
-                <button>Shop Candles</button>
+                <div className={"homelanding-shop-display-text-bottom"}> 
+                    <p>Vibras by Emy</p>
+                    <p>Handmade Soy Candles</p>
+                </div>
             </div>
 
-            <div className={"homelanding-break"}>
-
+            <div className={"homelanding-shop-goto"}>
+                
             </div>
         </div>
     )

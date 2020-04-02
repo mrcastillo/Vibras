@@ -81,6 +81,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
             display: flex;
             flex-flow: row;
             width: 100%;
+            height: 100%;
 
             .navi-bar-sm-left {
                 display: flex;
@@ -146,77 +147,77 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
     }
 
     .homelanding-container {
-        display: flex;
-        flex-flow: column;
-        margin-top: 40px;
+        padding: 55px 1em 1em 1em;
         background: white;
-
-        .sale {
-            color: white;
-            text-align: center;
-            padding: 10px 0px;
-            background: black;
-            width: 100%;
-        }
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 250px;
         
-        .homelanding-text {
+
+        .homelanding-intro-text {
+            align-self: center;
+            justify-self: center;
+            opacity: .8;
+            font-size: 14px;
+            font-family: "lobster";
+            width: 100%;
             text-align: center;
-            padding: 50px 2em 1em 2em;
-
-            h3 {
-                margin: 0;
-                font-size: 16px;
-                opacity: .8;
-            }
-
-            p {
-                margin: 0;
-                opacity: .5;
-                text-align: center;
-            }
+            padding: .5em;
         }
 
         .homelanding-shop-display {
+            grid-column: 1;
+            grid-row: 2;
+            //background-image: url("../images/VibrasMultipleCandles.png");
+            background-position: center;
+            background-size: cover;
+
+            border-radius: 3px;
+            opacity: .9;
+
+            display: flex;
+            flex-flow: column wrap;
+            
+            .homelanding-shop-display-text {
+                background: rgba(240, 240, 240, .6);
+                color: black;
+                text-align: right;
+                align-self: flex-end;
+                padding: .2em .5em;
+
+                font-weight: 600;
+            }
+
+            .homelanding-shop-display-text-bottom {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                
+                flex: 1;
+
+                p {
+                    text-align: center;
+                    padding: .5em;
+                    background: rgba(255, 255, 255, .7);
+                    font-weight: 900;
+                    align-self: center;
+                    font-size: 18px;
+                    margin: 0;
+                    border-radius: 2px;
+                    margin-bottom: 1px;
+                }
+            }
+        }
+
+        .homelanding-shop-goto {
             display: flex;
             flex-flow: column;
             align-items: center;
-            margin: 0em 1em;
 
-            ul {
-                width: 100%;
-                padding: 0em 0em;
-                margin: 0em 0em;
-                list-style: none;
-                text-align: right;
-                font-family: "lobster";
-                
-                li {
-                    display: inline;
-                    margin: 0em 0em 0em .5em;
-                }
-            }
-
-            .homelanding-shop-display-images {
-                
-                height: 200px;
-                display: flex;  
-
-                img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            
-            button {
-                width: 100%;
-                border: 1px solid black;
-                color: black;
-                background: rgba(240, 240, 240, 1);
-                font-size: 16px;
-                font-weight: 600;
-                padding: 8px 0px;
-                font-family: "lobster";
+            p {
+                margin: .5em 0em .5em 0em;
+                font-size: larger;
+                //font-size: 14px;
             }
         }
     }
@@ -293,18 +294,16 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
     .homelanding-IG-container {
         display: flex;
         flex-flow: column;
-        //background-image: linear-gradient(to left, rgba(234, 216, 216, .0), rgba(234, 216, 216, 1));
 
-        h2 {
-            text-align: center;
+        .homelanding-IG-text {
+            align-self: center;
+            justify-self: center;
+            opacity: .8;
+            font-size: 14px;
+            font-family: "lobster";
             width: 100%;
-            margin: 1em 0em 0em 0em;
-        }
-
-
-        p {
             text-align: center;
-            margin: 15px 0px;
+            padding: .5em;
         }
 
         .homelanding-IG-images {

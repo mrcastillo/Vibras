@@ -10,9 +10,6 @@ import candle6 from "../images/candle6.jpg";
 const HomeLandingIG = () => {
     return (
         <div className={"homelanding-IG-container"}>
-            
-            <h2>Vibras On Instagram</h2>
-            <p>Follow Us On Instagram</p>
             <div className={"homelanding-IG-images"}>
                 <div>
                     <img src={candle1} />

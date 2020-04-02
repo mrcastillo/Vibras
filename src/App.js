@@ -28,8 +28,10 @@ const App = () => {
                     {/* 
                     <div className={"homelanding-break"}></div>
                     <HomeLandingCarol />
-                    */}
+                    
                     <HomeLandingSubscribe />
+                    <HomeLandingIG />
+                    */}
                     <HomeLandingIG />
                 </Route>
                 <Route path={"/shop"} component={Shop}/>
